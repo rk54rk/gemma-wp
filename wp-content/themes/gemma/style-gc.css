@@ -1,0 +1,55 @@
+.box-dropshadow{
+	box-shadow: 5px 5px 5px #BBBBBB;
+	background: #fff;
+	}
+
+.navbar-sub {
+	display: none;
+}
+.sidebar {
+	display: none;
+}
+.cont-grid {
+	margin-top: 50px;
+}
+
+.item {
+	float: left;
+	margin: 0 5px 10px 5px;
+	width: 20%;
+	height: auto;
+	border: 1px solid #eee;
+}
+
+body{
+	background-color:#F6F2E7;}
+
+.main-menu{
+	float: right !important;
+	}
+
+.main-menu button, .main-menu button:hover, .main-menu button:active {
+	width:165px;
+	margin-right:20px;
+	margin-top:7px;
+	background-color:#1000FF;
+	color:#FFF;
+	box-shadow: 5px 5px 5px #AAAAAA;
+	border-radius:0px;
+	}
+	
+.main-menu li{
+	width:100%;
+	}
+
+#menu-main{
+	width:165px;	
+	}
+
+.navbar-header{
+	width:100%;
+	}
+
+.navbar-header h1 a:hover{
+	color:#1000FF;
+	}
