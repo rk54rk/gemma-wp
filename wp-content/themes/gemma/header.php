@@ -37,6 +37,7 @@
 	<?php wp_head(); ?> 
 	
 </head>
+<?php require_once( 'bg-layer/bg-layer.php' );?>
 <body <?php body_class(); ?>>
 
     <div class="navbar navbar-inverse navbar-fixed-top">

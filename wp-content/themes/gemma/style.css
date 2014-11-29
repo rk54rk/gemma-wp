@@ -82,7 +82,7 @@ a:focus, a:hover{color:#ff0052;}
 	
 	
 /*** Grid ***/
-.cont-grid{float:right;padding: 10px 0 0 5px;border-left: 1px solid #eee;}
+.cont-grid{float:right;padding: 10px 0 0 5px;}
 
 	.cont-grid .post{padding:20px 25px 20px 15px;}
 	.grid-cat{display:none;}

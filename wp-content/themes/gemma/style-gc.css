@@ -1,3 +1,12 @@
+.bg-layer{
+	position:fixed;
+	overflow:hidden;
+	}
+	
+.bg-layer img{
+	position:fixed
+	}
+
 .box-dropshadow{
 	box-shadow: 5px 5px 5px #BBBBBB;
 	background: #fff;
