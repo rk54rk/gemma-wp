@@ -1,6 +1,11 @@
-<?php get_header(); ?>	
+<?php get_header(); ?>
+
+<div class="col-sm-12 page-title">		
+	<h3>News</h3>
+</div>
 <div class="container">	
 		<div class="col-md-12 cont-grid">
+
 		
 		<?php // if is home and is not paged show featured post
 		
@@ -23,11 +28,11 @@
 		
 		<?php }  ?>
 
-		<div class="grid">
+		<div class="content-column col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 					
 			<?php if (have_posts()) :?><?php while(have_posts()) : the_post(); ?> 
 
-				<div class="item">
+				<div class="content-item">
 				
 					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
@@ -74,7 +79,7 @@
 						
 						<?php } ?>
 						
-						<div class="grid-text">
+						<div class="content-text">
 						
 							<?php the_content('More...');?>
 							
@@ -118,10 +123,5 @@
 			
 	</div>
 	
-	<div class="col-md-3 sidebar">
-
-		<?php get_sidebar( 'primary' ); ?>		
-		    
-	</div>
 </div>
 <?php get_footer(); ?>	

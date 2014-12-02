@@ -48,7 +48,7 @@
               <!--/Gemma main menu -->
 <div id="mainmenu" class="btn-group main-menu">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-    ----></span>
+    
   </button>
   <ul class="dropdown-menu" role="menu">
           <?php /* Primary navigation */

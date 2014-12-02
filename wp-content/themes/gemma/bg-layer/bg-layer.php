@@ -12,7 +12,7 @@
 	overflow:hidden;
 	margin-top:0px;
 	
-  background: url(<?php echo get_stylesheet_directory_uri(); ?>/bg-layer/02.jpg) no-repeat center center fixed; 
+  background: url(<?php echo get_stylesheet_directory_uri(); ?>/bg-layer/05.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

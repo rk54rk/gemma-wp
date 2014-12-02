@@ -37,7 +37,7 @@ a:focus, a:hover{color:#ff0052;}
 /* Menus */
 .navbar {margin:0;border:none;border-radius:0;background-color:transparent;background-image: none;}
 .navbar h1{margin:0;}
-.navbar-inverse .navbar-brand {padding-bottom: 11px;color:#282826; font-weight: 300; font-size: 22px;}
+.navbar-inverse .navbar-brand {padding-bottom: 11px;color:#282826; font-weight: 300; font-size: 24px;}
 .navbar-inverse .navbar-brand .arrow{margin-right:5px;}
 .navbar-nav ul{list-style-type: none}
 .navbar-inverse .navbar-nav > li > a {color:#000;font-weight: 300;}
@@ -82,11 +82,9 @@ a:focus, a:hover{color:#ff0052;}
 	
 	
 /*** Grid ***/
-.cont-grid{float:right;padding: 10px 0 0 5px;}
-
-	.cont-grid .post{padding:20px 25px 20px 15px;}
+.cont-grid{float:right;padding: 10px 0 0 0;}
 	.grid-cat{display:none;}
-	.grid-tit{margin:10px 0 10px 0;  font-weight: 300;font-size: 28px; }
+	.grid-tit{margin:10px 0 10px 0;  font-weight: 300;font-size: 24px; text-align:left;}
 	.grid-tit a{color:#333;}
 	.grid-tit a:hover{color:#ff0055;}
 	.grid-cop{padding: 10px 0 0px 0;}
@@ -111,7 +109,7 @@ a:focus, a:hover{color:#ff0052;}
 	
 	
 	/* Pagination */
-	.pagination{padding: 0 0 0 15px;}
+	.pagination{padding: 0 0 0 0px;}
 	.pagination span, .pagination a{padding: 9px 14px;border: 1px solid #eee;}
 	
 	
@@ -125,7 +123,6 @@ a:focus, a:hover{color:#ff0052;}
 	.sing-cont{position: relative;margin-left:10%;width:80%;font-size: 16px; line-height: 26px;}
 	.single-in{padding:0;}
 	.meta{display:none; margin:0;padding:0;color:#999;}
-	.category-news .meta{display:block;}
 	.cat{margin:10px 0 0 0; color: #333; font-weight: 700; font-size: 13px;}
 	.tag-post{color:#1000FF; text-transform: capitalize;}
 	
@@ -238,18 +235,12 @@ a:focus, a:hover{color:#ff0052;}
 
 
 @media (max-width: 1000px) { 
-	
-	.featured{margin-top:50px}
-	.cont-grid, .sidebar{width:100%;}	
-	.single{float:left; width:100%;border-left: none;}	
-	
+
 }
 
 
 @media (max-width: 760px) { 
 
-	
-	.navbar-form {border:none}
 	.sing-tit-cont{margin-left:5%; width:90%;}
 	.sing-cont{margin-left:5%;width:90%;}
 	
@@ -257,6 +248,10 @@ a:focus, a:hover{color:#ff0052;}
 	.navbar-toggle:hover {background:#fff!important}
 	.navbar-toggle .icon-bar{background:#333!important}
 	
+	.page-title{text-align:left;margin-top:-20px;}
 }
 
-
+@media (min-width: 480px){
+.page-title{text-align:center;margin-top:-58px;}
+.content-text .p1{margin-right:50px;}
+}
