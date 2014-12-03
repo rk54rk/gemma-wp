@@ -114,11 +114,9 @@ a:focus, a:hover{color:#ff0052;}
 	
 	
 /* Single */
-.single{float:right;margin:0;padding:0;border-left: 1px solid #eee;}
 
 	.sing-cop{width:100%; height:auto;}
-	.sing-tit-cont{position: relative;margin:-69px 0 0 0; padding-top:22px; text-align:center;}
-	.sing-tit{margin:10px 0 20px 0;  font-weight: 300;font-size: 22px;}
+	.sing-tit{margin:10px 0 10px 0;  font-weight: 300;font-size: 24px;}
 	.sing-spacer{padding:3% 6%;}
 	.sing-cont{position: relative;margin-left:10%;width:80%;font-size: 16px; line-height: 26px;}
 	.single-in{padding:0;}
@@ -248,7 +246,7 @@ a:focus, a:hover{color:#ff0052;}
 	.navbar-toggle:hover {background:#fff!important}
 	.navbar-toggle .icon-bar{background:#333!important}
 	
-	.page-title{text-align:left;margin-top:-20px;}
+	.page-title{text-align:left;margin-top:-26px;}
 }
 
 @media (min-width: 480px){

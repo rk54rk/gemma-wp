@@ -1,47 +1,22 @@
 <?php get_header(); ?>
+<div class="col-md-12 page-title">		
+	<h3><?php the_category(','); ?></h3>
+</div>
 
-<div class="col-md-12 single">
-  <div class="col-md-12 single-in">
+<div class="container">	
+<div class="cont-grid content-spacer">
+  	<div class="content-column col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="content-item post">
     <?php if (have_posts()) :?>
     <?php while(have_posts()) : the_post(); ?>
-    <?php $video = get_post_meta($post->ID, 'fullby_video', true );
-				  
-				if($video != '') {?>
-    <div class="videoWrapper">
-      <div class='video-container'>
-        <iframe title='YouTube video player' width='400' height='275' src='http://www.youtube.com/embed/<?php echo $video; ?>' frameborder='0' allowfullscreen></iframe>
-      </div>
-    </div>
-    <?php 				                 
-           
-             	} else if ( has_post_thumbnail() ) { ?>
-    <?php the_post_thumbnail('single', array('class' => 'sing-cop')); ?>
-    <?php } else { ?>
-    <div class="row spacer-sing"> </div>
-    <?php }  ?>
-    <div class="sing-tit-cont">
-      <p class="cat">
-        <?php the_category(','); ?>
-      </p>
-      <h3 class="sing-tit">
+      <h2 class="sing-tit">
         <?php the_title(); ?>
       </h3>
       <p class="meta"> <i class="fa fa-clock-o"></i>
+      
         <?php the_time('j M , Y') ?>
-        &nbsp;
-        <?php 
-						$video = get_post_meta($post->ID, 'fullby_video', true );
-						
-						if($video != '') { ?>
-        <i class="fa fa-video-camera"></i> Video
-        <?php } else if (strpos($post->post_content,'[gallery') !== false) { ?>
-        <i class="fa fa-th"></i> Gallery
-        <?php } else {?>
-        <?php } ?>
       </p>
-    </div>
-    <div class="sing-cont">
-      <div class="sing-spacer">
+      <div class="content-text">
         <?php the_content('Leggi...');?>
         <?php wp_link_pages('pagelink=Page %'); ?>
         <p>
@@ -55,12 +30,13 @@
         <div id="comments">
           <?php comments_template(); ?>
         </div>
-      </div>
-    </div>
+       </div>
     <?php endwhile; ?>
     <?php else : ?>
     <p>Sorry, no posts matched your criteria.</p>
     <?php endif; ?>
   </div>
+  </div>
+</div>
 </div>
 <?php get_footer(); ?>

@@ -1,3 +1,5 @@
+.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+.video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 
 .bg-layer { 
     height:100%;
@@ -9,6 +11,10 @@
 
 .category-pictures .grid-tit{
 	display:none;
+	}
+
+.sing-tit{
+	text-align:center;
 	}
 
 .box-dropshadow{
@@ -48,18 +54,28 @@ body{
 	float: right !important;
 	}
 
-.main-menu button, .main-menu button:hover, .main-menu button:active {
-	width:120px;
-	height: 39px;
+.main-menu .btn-default, .main-menu .btn-default:focus, .main-menu .btn-default:active, .main-menu .btn-default.active, .main-menu .open .dropdown-toggle .btn-default{
+	width:90px;
+	height: 40px;
 	margin-right:0px;
-	margin-top:0px;
+	margin-top:1px;
 	font-size:24px;
 	color:#000;
-	background-color:none;
+	background:none;
+	border-radius:0px;
+	}
+
+.main-menu .btn-default:hover{
+	color:#FFF;
 	}
 	
 .main-menu li{
+	position:relative;
 	width:100%;
+	}
+
+.dropdown-menu{
+	left:-50px;
 	}
 
 #menu-main{

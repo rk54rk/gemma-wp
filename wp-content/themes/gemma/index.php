@@ -20,43 +20,6 @@
 						
 						<p class="meta"> <i class="fa fa-clock-o"></i> <?php the_time('j M , Y') ?> &nbsp;
 						
-							<?php 
-							$video = get_post_meta($post->ID, 'fullby_video', true );
-							
-							if($video != '') { ?>
-						 			
-						 		<i class="fa fa-video-camera"></i> Video
-						 			
-						 	<?php } else if (strpos($post->post_content,'[gallery') !== false) { ?>
-						 			
-						 		<i class="fa fa-th"></i> Gallery
-						
-								<?php } else {?>
-						
-								<?php } ?>
-								
-						</p>
-						 
-						<?php $video = get_post_meta($post->ID, 'fullby_video', true );
-						
-						if($video != '') {?>
-						
-						
-					    	<a href="<?php the_permalink(); ?>" class="link-video">
-								<img src="http://img.youtube.com/vi/<?php echo $video ?>/hqdefault.jpg" class="grid-cop"/>
-								<i class="fa fa-play-circle fa-4x"></i> 
-							</a>
-						
-						<?php 				                 
-						
-							} else if ( has_post_thumbnail() ) { ?>
-						
-						   <a href="<?php the_permalink(); ?>">
-						        <?php the_post_thumbnail('medium', array('class' => 'grid-cop')); ?>
-						   </a>
-						
-						<?php } ?>
-						
 						<div class="content-text">
 						
 							<?php the_content('More...');?>

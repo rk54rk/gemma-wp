@@ -37,9 +37,9 @@
 	<?php wp_head(); ?> 
 	
 </head>
-<?php require_once( 'bg-layer/bg-layer.php' );?>
-<body <?php body_class(); ?>>
 
+<body <?php body_class(); ?>>
+<?php require_once( 'bg-layer/bg-layer.php' );?>
     <div class="navbar navbar-inverse navbar-fixed-top">
      
         <div class="navbar-header">
@@ -93,42 +93,13 @@
 					    		<div class="caption">
 						    		<div class="cat"><span><?php $category = get_the_category(); echo $category[0]->cat_name; ?></span></div>
 						    		<div class="date"><i class="fa fa-clock-o"></i> <?php the_time('j M , Y') ?> &nbsp;
-						    		
-						    			<?php 
-										$video = get_post_meta($post->ID, 'fullby_video', true );
-										
-										if($video != '') { ?>
-						             			
-						             		<i class="fa fa-video-camera"></i> Video
-						             			
-						             	<?php } else if (strpos($post->post_content,'[gallery') !== false) { ?>
-						             			
-						             		<i class="fa fa-th"></i> Gallery
-			
-					             		<?php } else {?>
-		
-					             		<?php } ?>
-
+						    	
 						    		
 						    		</div>
 						    		
 						    		<h2 class="title"><?php the_title(); ?></h2>
 						    		
 					    		</div>
-
-				                <?php $video = get_post_meta($post->ID, 'fullby_video', true );
-					  
-								if($video != '') {?>
-					
-									 <img class="yt-featured" src="http://img.youtube.com/vi/<?php echo $video ?>/hqdefault.jpg" class="grid-cop"/>
-										
-								<?php 				                 
-		                   
-				             	} else if ( has_post_thumbnail() ) { ?>
-			
-			                        <?php the_post_thumbnail('quad', array('class' => 'quad')); ?>
-			                        				   
-			                    <?php } ?>
 						    	
 						    </a>
 						
