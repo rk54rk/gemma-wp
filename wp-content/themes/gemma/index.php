@@ -1,33 +1,16 @@
-<?php get_header(); ?>	
+<?php get_header(); ?>
+
+<div class="col-sm-12 page-title">		
+	<h3><?php $category = get_the_category(); echo $category[0]->cat_name;?></h3>
+</div>
 <div class="container">	
-		<div class="col-md-12 cont-grid">
-		
-		<?php // if is home and is not paged show featured post
-		
-		/*
-		if (is_home()) {
-		
-			if (!is_paged()) {
-				global $wp_query;
-				$tag = get_term_by('name', 'featured', 'post_tag');
-				$tag_id = $tag->term_id;
-				$wp_query->set("tag__not_in", array($tag_id));
-				$wp_query->get_posts();
-			}
-		}*/
-		?>
-		
-		<?php if ( is_search() ) { ?>
+		<div class="cont-grid content-spacer">
 
-			<p class="result">Result for: <strong><i><?php echo $s ?></i></strong></p>
-		
-		<?php }  ?>
-
-		<div class="grid">
+		<div class="content-column col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 					
 			<?php if (have_posts()) :?><?php while(have_posts()) : the_post(); ?> 
 
-				<div class="item">
+				<div class="content-item">
 				
 					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
@@ -74,7 +57,7 @@
 						
 						<?php } ?>
 						
-						<div class="grid-text">
+						<div class="content-text">
 						
 							<?php the_content('More...');?>
 							
@@ -118,10 +101,5 @@
 			
 	</div>
 	
-	<div class="col-md-3 sidebar">
-
-		<?php get_sidebar( 'primary' ); ?>		
-		    
-	</div>
 </div>
 <?php get_footer(); ?>	

@@ -48,7 +48,7 @@
               <!--/Gemma main menu -->
 <div id="mainmenu" class="btn-group main-menu">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-    
+    Menu
   </button>
   <ul class="dropdown-menu" role="menu">
           <?php /* Primary navigation */
@@ -154,40 +154,3 @@
 			
 	<?php  } // end if(is_home) ?>
 	
-	<div class="navbar navbar-inverse navbar-sub">
-     
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#submenu">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          
-        </div>
-        
-        <div  id="submenu" class="collapse navbar-collapse">
-          <?php /* Secondary navigation */
-			wp_nav_menu( array(
-			  'menu' => 'sub',
-			  'depth' => 2,
-			  'container' => false,
-			  'menu_class' => 'nav navbar-nav',
-			  //Process nav menu using our custom nav walker
-			  'walker' => new wp_bootstrap_navwalker())
-			);
-			?>
-			
-			<div class="col-sm-3 col-md-3 pull-right search-cont">
-		        <form class="navbar-form" role="search" method="get" action="<?php echo home_url() ; ?>">
-			        <div class="input-group">
-			            <input type="text" class="form-control" placeholder="Search" name="s" id="srch-term">
-			            <div class="input-group-btn">
-			                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-			            </div>
-			        </div>
-		        </form>
-	        </div>
-	        
-        </div><!--/.nav-collapse -->
-
-	</div>

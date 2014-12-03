@@ -82,9 +82,9 @@ a:focus, a:hover{color:#ff0052;}
 	
 	
 /*** Grid ***/
-.cont-grid{float:right;padding: 10px 0 0 0;}
+.cont-grid{padding: 10px 0 0 0;}
 	.grid-cat{display:none;}
-	.grid-tit{margin:10px 0 10px 0;  font-weight: 300;font-size: 24px; text-align:left;}
+	.grid-tit{margin:10px 0 10px 0;  font-weight: 300;font-size: 24px; text-align:center;}
 	.grid-tit a{color:#333;}
 	.grid-tit a:hover{color:#ff0055;}
 	.grid-cop{padding: 10px 0 0px 0;}
@@ -253,5 +253,5 @@ a:focus, a:hover{color:#ff0052;}
 
 @media (min-width: 480px){
 .page-title{text-align:center;margin-top:-58px;}
-.content-text .p1{margin-right:50px;}
+.content-text .p1{margin-right:0px;}
 }
