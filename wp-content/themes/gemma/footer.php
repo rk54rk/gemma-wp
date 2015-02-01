@@ -1,10 +1,9 @@
-
+<div class="footer-spacer" style="height:100px;"></div>
 <div class="col-md-12 footer">
 
 	&copy; Copyright <?php echo date("o");?>  &nbsp; <span><?php bloginfo('name'); ?></span>
 	
 </div>
-
 
 
 <!-- Bootstrap core JavaScript

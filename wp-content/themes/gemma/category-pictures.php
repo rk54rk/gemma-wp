@@ -33,10 +33,10 @@
 				<div class="item">
 				
 					<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					
+                   
 						<p class="grid-cat"><?php the_category(','); ?></p> 
 						
-						<h2 class="grid-tit"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<h2 class="grid-tit"><a href="<?php the_permalink(); ?>"></a></h2>
 						
 						<p class="meta"> <i class="fa fa-clock-o"></i> <?php the_time('j M , Y') ?> &nbsp;
 						
@@ -82,15 +82,12 @@
 							<?php the_content('More...');?>
 							
 						</div>
-						
-						<p>
-							<?php $post_tags = wp_get_post_tags($post->ID); if(!empty($post_tags)) {?>
-								<span class="tag-post"> <i class="fa fa-tag"></i> <?php the_tags('', ', ', ''); ?> </span>
-							<?php } ?>
-						</p>
+                        <div style="margin-top:10px;">
+						<?php the_title(); ?>&nbsp;<span class="pictures-year"><?php echo get_the_date('Y', $post->ID);?></span>
+                        </div>
 						
 					</div>
-					
+                  					
 				</div>	
 
 			<?php endwhile; ?>

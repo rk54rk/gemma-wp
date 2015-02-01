@@ -8,10 +8,10 @@
     <?php } else { ?>
     <?php }  ?>
 
-  <h3><?php the_title(); ?></h3>
+  <h3>Words</h3>
 </div>
-<div class="container about">
-  <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 cont-grid content-spacer" style="background-color:#FFF;padding:35px;">
+<div class="container words">
+  <div class="col-sm-12 cont-grid content-spacer">
       <?php the_content(); ?>
     </div>
   </div>

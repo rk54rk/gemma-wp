@@ -7,13 +7,15 @@
 
     <title><?php wp_title('&raquo;','true','right'); ?><?php bloginfo('name'); ?></title>
     <meta name="description" content="<?php echo get_option('fullby_description'); ?>" />
-    
+
+	<!-- LL Circular-->
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/fonts/circular/stylesheet.css" type="text/css" charset="utf-8" />
+
     <!-- Favicon -->
     <link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/img/favicon.png" type="image/x-icon"> 
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
     <link href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" rel="stylesheet">
@@ -71,7 +73,9 @@
     
     
     </div>
-    
+
+
+
     <?php if (is_home()) { ?>
     
     	 <?php if (!is_paged()){ ?> 

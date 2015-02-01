@@ -9,6 +9,9 @@
     <div class="content-item post">
     <?php if (have_posts()) :?>
     <?php while(have_posts()) : the_post(); ?>
+    <div class="featured">
+    <?php the_post_thumbnail( 'single-post-thumbnail' ); ?>
+    </div>
       <h2 class="sing-tit">
         <?php the_title(); ?>
       </h3>
@@ -26,7 +29,6 @@
           </span>
           <?php } ?>
         </p>
-        <hr />
         <div id="comments">
           <?php comments_template(); ?>
         </div>

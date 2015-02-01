@@ -1,3 +1,14 @@
+<?php // add category nicenames in body and post class
+function category_id_class( $classes ) {
+	global $post;
+	foreach ( ( get_the_category( $post->ID ) ) as $category ) {
+		$classes[] = "category-".$category->category_nicename;
+	}
+	return $classes;
+}
+add_filter( 'post_class', 'category_id_class' );
+add_filter( 'body_class', 'category_id_class' );
+?>
 <?php // CONTENT WIDTH & feedlinks 
 
 	if ( ! isset( $content_width ) ) $content_width = 900;

@@ -1,5 +1,64 @@
-.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+
+
+body, html, a, h1, h2, h3, h4, h5, h6{font-family: "Circular-Medium", AdobeBlank;}
+.video-container { position: relative; height: 0; overflow: hidden; }
 .video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+.page-title a, .page-title a:visited{ color:#000;}
+.page-title a:hover, .page-title a:active{ color:#ff0052;}
+
+.bg-type a, .bg-type a:visited{ color:#000;text-decoration:underline;}
+.bg-type a:hover, .bg-type a:active{ color:#ff0052;text-decoration:none;}
+
+.post{font-size:16px;}
+.front-collage{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%; 
+  text-align:center;
+  }
+.front-collage img{
+	height:100%;
+	width:auto;
+	}
+
+.differentiate-first{background: url('img/glitter.jpg');background-size: cover;background-color:#333!important;color:#FFF;}
+.differentiate-first .grid-tit a, .differentiate-first .grid-tit a:visited{color:#FFF;}
+.differentiate-first .grid-tit a:hover, .differentiate-first .grid-tit a:active{color:#ff0052; text-decoration:none;}
+
+
+/*navbar-brand replace text with image*/
+.navbar-brand{
+ background: url('img/logo.png') no-repeat;
+ background-size:cover;
+ display: inline-block;
+ height: 80px;
+ width: 140px;	
+ text-indent: -9999px;
+ margin:15px 15px 0 15px;
+ position:absolute;
+ top:-25px;
+ left:-3px;
+	}
+
+.home .navbar{display:none;}
+/*orange:#f93228, pink #ffa2a2*/
+
+.dropdown-menu{
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	border:none;
+	border-radius:0;
+	padding:0;
+	background-color:#000;
+	}
+
+.btn-group.open .dropdown-toggle{
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	}
 
 .bg-layer { 
     height:100%;
@@ -44,9 +103,13 @@
 .content-text img{width:100%; height:100%;}
 
 .category-pictures .item{
-	background:none;
+	padding:20px;
 	}
-
+.category-pictures .post{
+	padding:15px;
+	background-color:#FFF;
+	}
+	
 body{
 	background-color:#efe3d5;}
 
@@ -58,7 +121,7 @@ body{
 	width:90px;
 	height: 40px;
 	margin-right:0px;
-	margin-top:1px;
+	margin-top:11px;
 	font-size:24px;
 	color:#000;
 	background:none;
@@ -76,6 +139,7 @@ body{
 
 .dropdown-menu{
 	left:-50px;
+	margin:0;
 	}
 
 #menu-main{
